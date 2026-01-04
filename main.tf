@@ -3,4 +3,9 @@ module "rg" {
   resourcegroup = var.resourcegroup
 }
 
+module "network" {
+  source        = "./network"
+  resourcegroup = var.resourcegroup
+}
+
 
